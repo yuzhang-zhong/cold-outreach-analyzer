@@ -1,14 +1,14 @@
-# Synthetic Evaluation Cases
+# Synthetic Consistency Checks
 
 Hand-applied edge-case checks for the draft rubric. All names and messages below are fictional. Results are intended classifications, not probability forecasts.
 
 | ID | Synthetic input | Expected output | Result |
 | --- | --- | --- | --- |
 | S01 | Applicant sent a tailored email; no reply after three weeks. The program page says faculty contact is not required before committee review. | U; silence is missing evidence. Mechanism is committee-based; no adverse inference. Mention the page's contact policy and a low-cost next step only if useful. | Pass — U; the process note is kept separate from the absent individual reply. |
-| S02 | Professor says, “I cannot take a student this fall; my grant ended.” | T10 for this supervisor and cycle; reason code no capacity/funding. Program admission and other labs remain unknown. | Pass — T10 scoped to this PI/cycle. |
+| S02 | Professor says, “I will not recommend you for my lab this cycle, and I have no position to offer.” | T10 if this clearly closes the applicant-specific supervisor route. Other supervisors and centralized admission remain unknown. | Pass — route-closing refusal is T10, scoped to this PI/cycle. |
 | S03 | “Thanks for reaching out. Your background is interesting. I encourage you to apply.” Same wording appears on the lab's public FAQ; no current opening is stated. | T8 if this is the only interaction; preserve positive tone, mark current capacity unknown, and note template/public nature. | Pass — T8; no endorsement or funding inferred. |
 | S04 | Every applicant to a funded cohort is invited to the same ten-minute screening call; the professor's page confirms current-cycle recruitment. | T7 for public current-cycle recruitment, not T3. Record the call as routine and not individually selective. | Pass — T7; mass process does not become individualized interview evidence. |
-| S05 | All applicants must upload a CV and a two-page proposal; an email says “please submit the required materials.” | T9 procedural-only, not T4. | Pass — the common requirement is not treated as assessment. |
+| S05 | Professor says, “I do not make recommendations before committee review.” The policy applies to all applicants; no personal decision is stated. | T9 procedural policy, not T10. | Pass — a general committee policy is kept separate from an applicant-specific refusal. |
 | S06 | Professor says, “If you are admitted, contact me and we can see whether I have funding.” | Not T1. If this is otherwise a generic invitation to apply, T8; funding remains unknown/contingent. | Pass — future possibility is not commitment. |
 | S07 | “Apply and list me as a potential adviser; admissions are centralized.” No personal review or applicant-specific routing is stated. | Not T2 and not T6. T8 if encouragement is present; otherwise T9 for process-only text. | Pass — generic form instruction is not advocacy or personal review. |
 | S08 | “Send your application ID; I will personally review it before our shortlist.” No promise to recommend or supervise. | T6; personal review is explicit, advocacy and admission are not. | Pass — routing/review is kept distinct from advocacy. |
@@ -21,8 +21,22 @@ Hand-applied edge-case checks for the draft rubric. All names and messages below
 | S15 | Professor says, “I will supervise you and reserve the RA line if admitted”; the admissions office says, “No applicant has been selected; the committee has not reviewed files.” | T1 may describe the professor's conditional supervision/funding support, while institutional selection remains pending. Keep both authorities; do not call them contradictory. | Pass — authority boundary prevents false conflict. |
 | S16 | Two messages from the same professor for the same cycle conflict: one promises a funded slot; the later message says funding is not available, with no clear effective date. | Mark current evidence as unresolved/conflicting; show both dates and ask whether the funding update applies to this applicant/cycle. If later cancellation is confirmed, T10 for the PI route. | Pass — do not average or hide conflict. |
 | S17 | Individual interview invitation asks detailed questions about the applicant's prior research; the invitation is accepted and interview is scheduled but has not happened. | T3, state “invited/scheduled; not completed.” Do not infer an offer. | Pass — interaction state is explicit. |
-| S18 | A university offers admission, but the professor says they cannot advise this student; the department permits first-year rotations. | Record the institutional offer as an outcome and PI unavailability as a separate route-specific T10; central admission and alternative lab access remain possible. | Pass — PI refusal does not negate a separate program offer. |
+| S18 | A program portal records an official rejection. Earlier, a professor had sent an explicit T2 recommendation to the committee. | Record the program rejection as a separate outcome that closes the program route. Retain the earlier T2 in dated history; do not recode the committee decision as T10. | Pass — formal outcome is separate from engagement tier and preserves prior faculty support. |
 
 ## Coverage
 
-The cases exercise silence/U, T1–T10 distinctions, formal offers, conditional support, current recruitment, centralized review, routine interviews and documents, vague positive wording, funding uncertainty, route scope, chronology, and conflicting sources. This is a rule-consistency check, not a statistical validation.
+The 18 hand-applied cases exercise silence/U, T1–T10 distinctions, formal offers, conditional support, current recruitment, centralized review, routine interviews and documents, vague positive wording, funding uncertainty, route scope, chronology, and conflicting sources. They are a manual consistency check, not a benchmark, statistical validation, or estimate of classification accuracy.
+
+## Separate blind-review spot-check (5 fictional cases)
+
+A reviewer received the skill and framework without the expected results in the 18-case set, generated five additional fictional cases, and applied the rubric independently. These checks are separate from the manual cases above and are not a benchmark or statistical validation.
+
+| Case | Blind input | Updated rubric treatment |
+| --- | --- | --- |
+| B1 | Professor says they plan to recruit one student this application cycle, contingent on studentship approval, and encourages the applicant to apply. | T7 intent evidence only when a clear current-cycle recruiting intent is stated; recruitment remains planned but conditional, not confirmed. General hope without clear cycle intent is T8. |
+| B2 | Professor says they will supervise the applicant if admitted and identifies a reserved stipend, pending institutional approvals. | T1 individualized support with admission and funding authorities/conditions recorded separately. |
+| B3 | Coordinator says every applicant who names a professor is routed to that professor for review. | T9 procedural routing; reserve T6 for explicitly promised discretionary applicant-specific review beyond the standard process. |
+| B4 | Professor first offers to advocate, then reports that a grant freeze eliminates their capacity for the cycle. | Current PI route T10; retain earlier T2 as dated history. Other admission routes remain unknown. |
+| B5 | Professor asks for a research plan but has not said whether it will be assessed or used as a discussion starter. | Report a T4–T5 range with uncertainty and ask what role the plan plays; do not invent the purpose. |
+
+The spot-check prompted clearer rules for T6 versus T9, conditional recruiting intent, and current-route tier versus dated history. The later consistency edits further distinguish general committee policy from a route-closing personal refusal and keep formal program outcomes out of the ten engagement tiers.
