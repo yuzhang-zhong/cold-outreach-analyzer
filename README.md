@@ -18,7 +18,7 @@ The skill does not automatically scan private inboxes or send messages. It works
 
 ## Install and use
 
-Copy the complete `skills/cold-outreach-analyzer/` directory into `$CODEX_HOME/skills/cold-outreach-analyzer/` for user-wide installation, or into `.agents/skills/cold-outreach-analyzer/` in a project for project-local installation. Keep `SKILL.md` and its `references/` folder together. Ask it to interpret a reply, email thread, interview invitation, recruitment note, funding discussion, or no-response situation. For a useful read, include the program, degree, application cycle, and any official process or funding language you already have.
+Copy the complete `skills/cold-outreach-analyzer/` directory into `$CODEX_HOME/skills/cold-outreach-analyzer/` for user-wide installation, or into `.agents/skills/cold-outreach-analyzer/` in a project for project-local installation. Keep `SKILL.md` and its `references/` folder together. Reload the Codex session if the skill is not immediately available. Ask it to interpret a reply, email thread, interview invitation, recruitment note, funding discussion, or no-response situation. For a useful read, include the program, degree, application cycle, and any official process or funding language you already have.
 
 ## The ten tiers
 
